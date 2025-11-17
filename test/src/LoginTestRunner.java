@@ -37,11 +37,11 @@ public class LoginTestRunner {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 
-        testLogin("2021/ict/48", "235", "TC01");
+        testLogin("valUsername", "wrongPassword", "TC01");
         
-        testLogin("2021/jhdjd", "235", "TC03");
-        testLogin("5464", "123456#@.azhaF", "TC04");
-        testLogin("2021/ict/48", "123456#@.azhaF", "TC02");
+        testLogin("wrongUsername", "wrongPassword", "TC03");
+        testLogin("WrongUsername", "valPassword", "TC04");
+        testLogin("valUsername", "valPassword", "TC02");
 
         driver.quit();
         generatePDF();
