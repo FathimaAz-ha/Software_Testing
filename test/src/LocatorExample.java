@@ -11,11 +11,11 @@ public class LocatorExample {
         driver.manage().window().maximize();
         // 1. Locate by ID
         WebElement username = driver.findElement(By.id("username"));
-        username.sendKeys("2021/ICT/48");
+        username.sendKeys("username");
 
         // 2. Loacte by Name
         WebElement password = driver.findElement(By.name("password"));
-        password.sendKeys("123456#@.azhaF");
+        password.sendKeys("Your password");
 
         // 3. Locate className
         WebElement logo = driver.findElement(By.className("img-fluid"));
